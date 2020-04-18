@@ -1,0 +1,13 @@
+.page {
+  &-enter-active, &-leave-active {
+    transition: all 0.2s ease-in;
+  }
+  &-enter, &-leave-to {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  &-leave, &-enter-to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
