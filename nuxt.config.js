@@ -51,7 +51,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: "http://localhost:5000"
+    baseURL: "https://trd-events.herokuapp.com/api"
   },
   /*
   ** vuetify module configuration
@@ -80,5 +80,6 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  serverMiddleware: ["~/server/index.js"]
 }
