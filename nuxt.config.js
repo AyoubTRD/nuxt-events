@@ -51,7 +51,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: "https://trd-events.herokuapp.com/api"
+    baseURL: "process.env.NEXT_PUBLIC_SERVER_URL"
   },
   /*
   ** vuetify module configuration
@@ -78,7 +78,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   },
   serverMiddleware: ["~/server/index.js"]
